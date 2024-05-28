@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://ecommerce-mern-cwyq.onrender.com/api/";
+const BASE_URL = "https://mern-ecommerce-4q07.onrender.com/api/";
 // const TOKEN =
 //   JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser
 //     .accessToken || "";
