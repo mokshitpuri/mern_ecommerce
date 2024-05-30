@@ -11,6 +11,7 @@ const Container = styled.div`
     display: flex;
     ${mobile({ flexDirection: "column"})}
 `;
+
 const Left = styled.div`
     flex: 1;
     display: flex;
@@ -18,16 +19,17 @@ const Left = styled.div`
     padding: 20px;
 `;
 
-const Logo = styled.h1`
+const Logo = styled.h1``;
 
-`;
 const Desc = styled.p`
     margin: 20px 0px;
 `;
+
 const SocialContainer = styled.div`
     display: flex;
 `;
-const SocialIcon = styled.div`
+
+const SocialIcon = styled.a`
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -37,18 +39,18 @@ const SocialIcon = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    text-decoration: none;
 `;
 
 const Center = styled.div`
     flex: 1;
     padding: 20px;
     ${mobile({ display: "none"})}
-    
 `;
 
 const Title = styled.h3`
     margin-bottom: 30px;
-`
+`;
 
 const List = styled.ul`
     margin: 0;
@@ -56,12 +58,12 @@ const List = styled.ul`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-`
+`;
 
 const ListItem = styled.li`
     width: 50%;
     margin-bottom: 10px;
-`
+`;
 
 const Right = styled.div`
     flex: 1;
@@ -73,29 +75,32 @@ const ContactItem = styled.div`
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-`
+`;
+
 const Payment = styled.img`
     width: 50%;
-`
+`;
 
 const Footer = () => {
   return (
     <Container>
       <Left>
         <Logo>PURI TRADERS.</Logo>
-        <Desc>Leading the way for Quality Products with Excellent Customer Services from past 3 Decades.
-        One stop destination for wide range of brands and products📍</Desc>
+        <Desc>
+          Leading the way for Quality Products with Excellent Customer Services from past 3 Decades.
+          One stop destination for wide range of brands and products📍
+        </Desc>
         <SocialContainer>
-            <SocialIcon color = "3B5999" >
+            <SocialIcon color="3B5999" href="https://hi-in.facebook.com/people/Puri-Traders/100066636012084/" target="_blank" rel="noopener noreferrer">
                 <FacebookIcon />
             </SocialIcon>
-            <SocialIcon color = "E4405F">
+            <SocialIcon color="E4405F" href="https://www.instagram.com/puritraderss/" target="_blank" rel="noopener noreferrer">
                 <InstagramIcon />
             </SocialIcon>
-            <SocialIcon color = "55ACEE">
+            <SocialIcon color="55ACEE" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <TwitterIcon />
             </SocialIcon>
-            <SocialIcon color = "E60023">
+            <SocialIcon color="E60023" href="mailto:puritraders75@gmail.com" target="_blank" rel="noopener noreferrer">
                 <EmailIcon />
             </SocialIcon>
         </SocialContainer>
@@ -115,13 +120,22 @@ const Footer = () => {
       </Center>
       <Right>
         <Title>Contact</Title>
-        <ContactItem><RoomIcon style={{marginRight:"10px"}}/>Shop no. 9, MC Market, Sonipat, Haryana</ContactItem>
-        <ContactItem><PhoneIcon style={{marginRight:"10px"}}/>+91 9812327107 , +91 9812227107</ContactItem>
-        <ContactItem><EmailIcon style={{marginRight:"10px"}} />puritraders75@gmail.com</ContactItem>
-        <Payment src= "./images/payments.png"/>
+        <ContactItem>
+          <RoomIcon style={{ marginRight: "10px" }} />
+          Shop no. 9, MC Market, Sonipat, Haryana
+        </ContactItem>
+        <ContactItem>
+          <PhoneIcon style={{ marginRight: "10px" }} />
+          +91 9812327107 , +91 9812227107
+        </ContactItem>
+        <ContactItem>
+          <EmailIcon style={{ marginRight: "10px" }}/>
+          puritraders75@gmail.com
+        </ContactItem>
+        <Payment src="/images/payments.png" />
       </Right>
     </Container>
   )
 }
 
-export default Footer
+export default Footer;
