@@ -45,10 +45,12 @@ const Circle = styled.div`
     border-radius: 50%;
     background-color: white;
     position: absolute;
+    
 `
 const Image = styled.img`
-    height: 75%;
+    height: 70%;
     z-index: 2;
+    clip-path: circle(50% at 50% 50%);
 `
 
 
