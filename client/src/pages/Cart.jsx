@@ -253,7 +253,7 @@ const Cart = () => {
                 </SummaryItem>
                 <StripeCheckout
                 name = "PURI TRADERS" 
-                image = "src/logo.png"
+                image = "https://scontent.fixc1-10.fna.fbcdn.net/v/t39.30808-6/305584899_435858271978703_113299253210445531_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IyF-Jr2MKM4Q7kNvgFgicPm&_nc_ht=scontent.fixc1-10.fna&oh=00_AYAYUyeSxXMMLG8gXLmJcnUZg0Dv2Z9OfBYZYb4Hy1d8Mg&oe=66652C3D"
                 billingAddress
                 description ={`Your total is ₹${cart.total}`}
                 amount = {cart.total*100}
