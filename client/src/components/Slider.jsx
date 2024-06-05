@@ -88,6 +88,11 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    &:hover{
+        background-color: #eed1e6;
+        transform: scale(1.1);
+    }
+
     ${mobile({ padding: "5px", fontSize: "16px" })}
 `;
 

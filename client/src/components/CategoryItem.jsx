@@ -39,6 +39,10 @@ const Button = styled.button`
     cursor: pointer;
     font-weight: 600;
     ${mobile({ padding: "7px"})}
+    &:hover{
+        background-color: #d4d7ff;
+        transform: scale(1.1);
+    }
 `
 
 

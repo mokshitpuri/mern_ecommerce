@@ -3,8 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
-import RoomIcon from '@mui/icons-material/Room';
-import PhoneIcon from '@mui/icons-material/Phone';
+import {MailOutline, Phone, Place} from '@material-ui/icons'
 import { mobile } from "../responsive";
 
 const Container = styled.div`
@@ -120,17 +119,21 @@ const Footer = () => {
       </Center>
       <Right>
         <Title>Contact</Title>
-        <ContactItem>
-          <RoomIcon style={{ marginRight: "10px" }} />
-          Shop no. 9, MC Market, Sonipat, Haryana
+        <ContactItem> 
+            <Place style = {{marginRight: "10px"}}/>Shop no. 9, MC Market, Sonipat, Haryana
         </ContactItem>
         <ContactItem>
-          <PhoneIcon style={{ marginRight: "10px" }} />
-          +91 9812327107 , +91 9812227107
+            <a href="tel:+919812327107" style={{textDecoration: "none", color: "inherit"}}>
+                <Phone style={{marginRight: "10px"}} />+91 9812327107
+            </a>, 
+            <a href="tel:+919812227107" style={{textDecoration: "none", color: "inherit"}}>
+            +91 9812227107
+            </a>
         </ContactItem>
         <ContactItem>
-          <EmailIcon style={{ marginRight: "10px" }}/>
-          puritraders75@gmail.com
+            <a href="mailto:puritraders75@gmail.com" style={{textDecoration: "none", color: "inherit"}}>
+                <MailOutline style={{marginRight: "10px"}} /> puritraders75@gmail.com
+            </a>
         </ContactItem>
         <Payment src="/images/payments.png" />
       </Right>
